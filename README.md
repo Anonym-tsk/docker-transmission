@@ -26,12 +26,12 @@
         -e PGID=1000
         -e USERNAME=username
         -e PASSWORD=password
-        gists/transmission
+        anonymtsk/transmission
 
 #### Compose example:
 
     transmission:
-      image: gists/transmission
+      image: anonymtsk/transmission
       ports:
         - "8080:9091"
         - "51413:51413"
