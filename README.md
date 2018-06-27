@@ -11,16 +11,16 @@
 | PUID        | 1000          |
 | PGID        | 1000          |
 | RPC_PORT    | 9091          |
-| PEERPORT    | 51413         |
-| USERNAME    | username      |
-| PASSWORD    | $(hostname)   |
+| PEER_PORT   | 51413         |
+| USERNAME    | transmission  |
+| PASSWORD    | transmission  |
 
 #### Custom usage:
 
     docker run \
         -d \
         --name transmission \
-        -p 8080:9091 \
+        -p 9091:9091 \
         -v /your/config:/config \
         -e PUID=1000
         -e PGID=1000

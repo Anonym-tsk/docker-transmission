@@ -4,7 +4,7 @@ MAINTAINER anonym.tsk@gmail.com
 ENV PUID        1000
 ENV PGID        1000
 ENV RPC_PORT    9091
-ENV PEERPORT    51413
+ENV PEER_PORT   51413
 ENV USERNAME    transmission
 ENV PASSWORD    transmission
 
@@ -23,7 +23,7 @@ COPY entrypoint.sh /usr/bin/entrypoint.sh
 
 VOLUME /config
 
-EXPOSE $RPC_PORT $PEERPORT $PEERPORT/UDP
+EXPOSE $RPC_PORT $PEER_PORT $PEER_PORT/UDP
 
 ENTRYPOINT ["/usr/bin/entrypoint.sh"]
 
@@ -31,6 +31,6 @@ CMD /usr/bin/transmission-daemon \
                         --foreground \
                         --config-dir /config \
                         --port $RPC_PORT \
-                        --peerport $PEERPORT \
+                        --peerport $PEER_PORT \
                         --username $USERNAME \
                         --password $PASSWORD
