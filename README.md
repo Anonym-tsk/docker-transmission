@@ -22,10 +22,10 @@
         --name transmission \
         -p 9091:9091 \
         -v /your/config:/config \
-        -e PUID=1000
-        -e PGID=1000
-        -e USERNAME=username
-        -e PASSWORD=password
+        -e PUID=1000 \
+        -e PGID=1000 \
+        -e USERNAME=username \
+        -e PASSWORD=password \
         anonymtsk/transmission
 
 #### Compose example:
