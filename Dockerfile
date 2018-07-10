@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM alpine:3.8
 MAINTAINER anonym.tsk@gmail.com
 
 ENV PUID        1000
@@ -10,8 +10,7 @@ ENV PASSWORD    transmission
 
 # Install packaged and files
 RUN set -xe && \
-    apk add --no-cache --repository http://nl.alpinelinux.org/alpine/edge/main transmission-daemon && \
-    apk add --no-cache bash tar curl shadow su-exec && \
+    apk add --no-cache bash tar curl shadow su-exec transmission-daemon && \
     cd /tmp && \
     curl -sSL https://github.com/ronggang/transmission-web-control/archive/v1.6.0-alpha.tar.gz | tar xz --strip 1 && \
     cp /usr/share/transmission/web/index.html /usr/share/transmission/web/index.original.html && \

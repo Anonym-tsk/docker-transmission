@@ -1,4 +1,4 @@
-![](https://img.shields.io/badge/Transmission-2.94-brightgreen.svg) ![](https://img.shields.io/badge/Alpine-3.7-brightgreen.svg) ![](https://img.shields.io/docker/stars/anonymtsk/transmission.svg) ![](https://img.shields.io/docker/pulls/anonymtsk/transmission.svg)
+![](https://img.shields.io/badge/Transmission-2.94-brightgreen.svg) ![](https://img.shields.io/badge/Alpine-3.8-brightgreen.svg) ![](https://img.shields.io/docker/stars/anonymtsk/transmission.svg) ![](https://img.shields.io/docker/pulls/anonymtsk/transmission.svg)
 
 #### Volumes
 
