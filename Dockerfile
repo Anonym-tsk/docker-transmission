@@ -12,7 +12,7 @@ ENV PASSWORD    transmission
 RUN set -xe && \
     apk add --no-cache bash tar curl shadow su-exec transmission-daemon && \
     cd /tmp && \
-    curl -sSL https://github.com/ronggang/transmission-web-control/archive/v1.6.0-alpha.tar.gz | tar xz --strip 1 && \
+    curl -sSL https://github.com/ronggang/transmission-web-control/archive/v1.6.0-beta2.tar.gz | tar xz --strip 1 && \
     cp /usr/share/transmission/web/index.html /usr/share/transmission/web/index.original.html && \
     cp -rf /tmp/src/* /usr/share/transmission/web/ && \
     apk del tar curl && \
